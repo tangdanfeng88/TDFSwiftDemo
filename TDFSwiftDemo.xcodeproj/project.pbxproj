@@ -11,7 +11,12 @@
 		C22C808320B4653700F26574 /* TDFSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C808220B4653700F26574 /* TDFSwiftDemoTests.swift */; };
 		C22C808E20B4653700F26574 /* TDFSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C808D20B4653700F26574 /* TDFSwiftDemoUITests.swift */; };
 		C26078FC20B4716D00742502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26078F920B4716D00742502 /* AppDelegate.swift */; };
-		C26078FD20B4716D00742502 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26078FA20B4716D00742502 /* RootVC.swift */; };
+		C276C18520E621EF005F9B4D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18420E621EF005F9B4D /* BaseUIViewController.swift */; };
+		C276C18720E6220D005F9B4D /* BaseUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18620E6220D005F9B4D /* BaseUINavigationController.swift */; };
+		C276C18920E62238005F9B4D /* MyUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18820E62238005F9B4D /* MyUITabBarController.swift */; };
+		C276C18B20E62259005F9B4D /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18A20E62259005F9B4D /* MeVC.swift */; };
+		C276C18D20E62269005F9B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18C20E62269005F9B4D /* HomeVC.swift */; };
+		C276C19020E6370A005F9B4D /* GlobalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18F20E6370A005F9B4D /* GlobalValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,12 @@
 		C22C808D20B4653700F26574 /* TDFSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDFSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		C22C808F20B4653700F26574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26078F920B4716D00742502 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C26078FA20B4716D00742502 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		C276C18420E621EF005F9B4D /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		C276C18620E6220D005F9B4D /* BaseUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationController.swift; sourceTree = "<group>"; };
+		C276C18820E62238005F9B4D /* MyUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITabBarController.swift; sourceTree = "<group>"; };
+		C276C18A20E62259005F9B4D /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		C276C18C20E62269005F9B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C276C18F20E6370A005F9B4D /* GlobalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +103,12 @@
 		C22C806C20B4653700F26574 /* TDFSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C276C17620E61FBC005F9B4D /* Expand */,
+				C276C17720E61FBC005F9B4D /* Vender */,
 				C26078F720B4716D00742502 /* Classes */,
-				C26078FB20B4716D00742502 /* Expand */,
-				C26078F620B4716D00742502 /* Vender */,
 				C22C807420B4653700F26574 /* Assets.xcassets */,
 				C22C807920B4653700F26574 /* Info.plist */,
+				C276C18F20E6370A005F9B4D /* GlobalValue.swift */,
 			);
 			path = TDFSwiftDemo;
 			sourceTree = "<group>";
@@ -120,16 +131,12 @@
 			path = TDFSwiftDemoUITests;
 			sourceTree = "<group>";
 		};
-		C26078F620B4716D00742502 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vender;
-			sourceTree = "<group>";
-		};
 		C26078F720B4716D00742502 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C276C17C20E621A8005F9B4D /* Home */,
+				C276C18020E621A8005F9B4D /* Main */,
+				C276C17820E621A8005F9B4D /* Me */,
 				C26078F820B4716D00742502 /* Other */,
 			);
 			path = Classes;
@@ -139,16 +146,120 @@
 			isa = PBXGroup;
 			children = (
 				C26078F920B4716D00742502 /* AppDelegate.swift */,
-				C26078FA20B4716D00742502 /* RootVC.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		C26078FB20B4716D00742502 /* Expand */ = {
+		C276C17620E61FBC005F9B4D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Expand;
+			sourceTree = "<group>";
+		};
+		C276C17720E61FBC005F9B4D /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		C276C17820E621A8005F9B4D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				C276C17920E621A8005F9B4D /* Controller */,
+				C276C17A20E621A8005F9B4D /* Model */,
+				C276C17B20E621A8005F9B4D /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		C276C17920E621A8005F9B4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C276C18A20E62259005F9B4D /* MeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C276C17A20E621A8005F9B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C276C17B20E621A8005F9B4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C276C17C20E621A8005F9B4D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C276C17D20E621A8005F9B4D /* Controller */,
+				C276C17E20E621A8005F9B4D /* Model */,
+				C276C17F20E621A8005F9B4D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C276C17D20E621A8005F9B4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C276C18C20E62269005F9B4D /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C276C17E20E621A8005F9B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C276C17F20E621A8005F9B4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C276C18020E621A8005F9B4D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C276C18120E621A8005F9B4D /* Controller */,
+				C276C18220E621A8005F9B4D /* Model */,
+				C276C18320E621A8005F9B4D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C276C18120E621A8005F9B4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C276C18420E621EF005F9B4D /* BaseUIViewController.swift */,
+				C276C18620E6220D005F9B4D /* BaseUINavigationController.swift */,
+				C276C18820E62238005F9B4D /* MyUITabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C276C18220E621A8005F9B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C276C18320E621A8005F9B4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26078FD20B4716D00742502 /* RootVC.swift in Sources */,
+				C276C18720E6220D005F9B4D /* BaseUINavigationController.swift in Sources */,
+				C276C18D20E62269005F9B4D /* HomeVC.swift in Sources */,
+				C276C18520E621EF005F9B4D /* BaseUIViewController.swift in Sources */,
+				C276C19020E6370A005F9B4D /* GlobalValue.swift in Sources */,
+				C276C18920E62238005F9B4D /* MyUITabBarController.swift in Sources */,
+				C276C18B20E62259005F9B4D /* MeVC.swift in Sources */,
 				C26078FC20B4716D00742502 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,15 +547,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7BTDY34B5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TDFSwiftDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TDFSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honglu.TDFSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,15 +566,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7BTDY34B5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TDFSwiftDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TDFSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honglu.TDFSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
