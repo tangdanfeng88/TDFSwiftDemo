@@ -1,19 +1,18 @@
 //
-//  MeVC.swift
+//  BigImageRoateScaleVC.swift
 //  TDFSwiftDemo
 //
-//  Created by 汤丹峰 on 2018/6/29.
+//  Created by tangdanfeng on 2018/9/20.
 //  Copyright © 2018年 tangdanfeng. All rights reserved.
 //
 
 import UIKit
 
-class MeVC: BaseUIViewController {
+class BigImageRoateScaleVC: BaseUIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = TDFColor(0xffffff)
+        self.title = "BigImage旋转缩放"
     }
-
-
 }

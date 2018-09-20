@@ -15,5 +15,15 @@ class BaseUINavigationController: UINavigationController {
 
     }
 
-
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if self.viewControllers.count>0 {
+            viewController.hidesBottomBarWhenPushed = true;
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"返回")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(backAction))
+        }
+        super.pushViewController(viewController, animated: animated)
+        viewController.navigationController?.navigationBar.isTranslucent = false
+    }
+    @objc func backAction() {
+        self .popViewController(animated: true)
+    }
 }

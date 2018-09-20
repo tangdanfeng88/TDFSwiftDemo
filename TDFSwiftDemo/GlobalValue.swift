@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 //屏幕宽高
-let kScreenWidth = UIScreen.main.bounds.size.height
-let kScreenHeight = UIScreen.main.bounds.size.width
+let kScreenWidth = UIScreen.main.bounds.size.width
+let kScreenHeight = UIScreen.main.bounds.size.height
 
 ////手机屏幕判断
 let kIsIpad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad
