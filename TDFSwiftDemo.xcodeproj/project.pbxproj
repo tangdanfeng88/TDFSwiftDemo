@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		C20414FE21534EB500BB99EB /* BigImageRoateScaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20414FD21534EB500BB99EB /* BigImageRoateScaleVC.swift */; };
 		C22C807520B4653700F26574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22C807420B4653700F26574 /* Assets.xcassets */; };
-		C22C808320B4653700F26574 /* TDFSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C808220B4653700F26574 /* TDFSwiftDemoTests.swift */; };
-		C22C808E20B4653700F26574 /* TDFSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C808D20B4653700F26574 /* TDFSwiftDemoUITests.swift */; };
 		C26078FC20B4716D00742502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26078F920B4716D00742502 /* AppDelegate.swift */; };
 		C276C18520E621EF005F9B4D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18420E621EF005F9B4D /* BaseUIViewController.swift */; };
 		C276C18720E6220D005F9B4D /* BaseUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18620E6220D005F9B4D /* BaseUINavigationController.swift */; };
@@ -18,6 +16,7 @@
 		C276C18B20E62259005F9B4D /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18A20E62259005F9B4D /* MeVC.swift */; };
 		C276C18D20E62269005F9B4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18C20E62269005F9B4D /* HomeVC.swift */; };
 		C276C19020E6370A005F9B4D /* GlobalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C18F20E6370A005F9B4D /* GlobalValue.swift */; };
+		CEE45EF9239DEA5C00EC5612 /* MyTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE45EF8239DEA5C00EC5612 /* MyTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +42,7 @@
 		C22C807420B4653700F26574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22C807920B4653700F26574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C22C807E20B4653700F26574 /* TDFSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDFSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22C808220B4653700F26574 /* TDFSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDFSwiftDemoTests.swift; sourceTree = "<group>"; };
-		C22C808420B4653700F26574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C22C808920B4653700F26574 /* TDFSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDFSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22C808D20B4653700F26574 /* TDFSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDFSwiftDemoUITests.swift; sourceTree = "<group>"; };
-		C22C808F20B4653700F26574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26078F920B4716D00742502 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C276C18420E621EF005F9B4D /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 		C276C18620E6220D005F9B4D /* BaseUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationController.swift; sourceTree = "<group>"; };
@@ -55,6 +50,7 @@
 		C276C18A20E62259005F9B4D /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		C276C18C20E62269005F9B4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C276C18F20E6370A005F9B4D /* GlobalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValue.swift; sourceTree = "<group>"; };
+		CEE45EF8239DEA5C00EC5612 /* MyTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				C22C806C20B4653700F26574 /* TDFSwiftDemo */,
-				C22C808120B4653700F26574 /* TDFSwiftDemoTests */,
-				C22C808C20B4653700F26574 /* TDFSwiftDemoUITests */,
 				C22C806B20B4653700F26574 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,27 +104,8 @@
 				C26078F720B4716D00742502 /* Classes */,
 				C22C807420B4653700F26574 /* Assets.xcassets */,
 				C22C807920B4653700F26574 /* Info.plist */,
-				C276C18F20E6370A005F9B4D /* GlobalValue.swift */,
 			);
 			path = TDFSwiftDemo;
-			sourceTree = "<group>";
-		};
-		C22C808120B4653700F26574 /* TDFSwiftDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				C22C808220B4653700F26574 /* TDFSwiftDemoTests.swift */,
-				C22C808420B4653700F26574 /* Info.plist */,
-			);
-			path = TDFSwiftDemoTests;
-			sourceTree = "<group>";
-		};
-		C22C808C20B4653700F26574 /* TDFSwiftDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C22C808D20B4653700F26574 /* TDFSwiftDemoUITests.swift */,
-				C22C808F20B4653700F26574 /* Info.plist */,
-			);
-			path = TDFSwiftDemoUITests;
 			sourceTree = "<group>";
 		};
 		C26078F720B4716D00742502 /* Classes */ = {
@@ -155,6 +130,8 @@
 		C276C17620E61FBC005F9B4D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				C276C18F20E6370A005F9B4D /* GlobalValue.swift */,
+				CEE45EF8239DEA5C00EC5612 /* MyTool.swift */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -402,6 +379,7 @@
 				C276C18520E621EF005F9B4D /* BaseUIViewController.swift in Sources */,
 				C276C19020E6370A005F9B4D /* GlobalValue.swift in Sources */,
 				C276C18920E62238005F9B4D /* MyUITabBarController.swift in Sources */,
+				CEE45EF9239DEA5C00EC5612 /* MyTool.swift in Sources */,
 				C276C18B20E62259005F9B4D /* MeVC.swift in Sources */,
 				C20414FE21534EB500BB99EB /* BigImageRoateScaleVC.swift in Sources */,
 				C26078FC20B4716D00742502 /* AppDelegate.swift in Sources */,
@@ -412,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22C808320B4653700F26574 /* TDFSwiftDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +397,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22C808E20B4653700F26574 /* TDFSwiftDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,11 +529,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A3M8M85CB4;
+				DEVELOPMENT_TEAM = 3423SH35F5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TDFSwiftDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TDFSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honglu.TDFSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,15 +547,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A3M8M85CB4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TDFSwiftDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = TDFSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honglu.TDFSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

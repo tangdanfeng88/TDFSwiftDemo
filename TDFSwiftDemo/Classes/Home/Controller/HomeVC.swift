@@ -22,12 +22,12 @@ class HomeVC: BaseUIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         for btn in btnArr {
-            btn.backgroundColor = TDFRandomColor()
+            btn.backgroundColor = kRandomColor()
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = TDFColor(0xffffff)
+        self.view.backgroundColor = kColorFromValue(0xffffff)
         
         itemArr = [["title":"BigImage旋转缩放", "action":"BigImageRoateScaleVC"]]
         
@@ -46,7 +46,7 @@ class HomeVC: BaseUIViewController {
             btn.tag = i;
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 14*kScaleX)
             btn.titleLabel?.numberOfLines = 0
-            btn.backgroundColor = TDFRandomColor()
+            btn.backgroundColor = kRandomColor()
             btn.setTitle(itemDict["title"], for: .normal)
             btn.setTitleColor(UIColor.white, for: .normal)
             btn.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)

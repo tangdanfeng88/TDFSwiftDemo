@@ -12,7 +12,7 @@ class BigImageRoateScaleVC: BaseUIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = TDFColor(0xffffff)
+        self.view.backgroundColor = kColorFromValue(0xffffff)
         self.title = "BigImage旋转缩放"
     }
 }

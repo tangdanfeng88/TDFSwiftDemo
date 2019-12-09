@@ -26,8 +26,8 @@ class MyUITabBarController: UITabBarController {
         childVc.tabBarItem.image = UIImage.init(named: image)
         childVc.tabBarItem.selectedImage = UIImage.init(named: selImage)
         
-        let textAttrs = [NSAttributedStringKey.foregroundColor : TDFColor(0x929292)]
-        let selectedTextAttrs = [NSAttributedStringKey.foregroundColor : TDFColor(0x4c90f2)]
+        let textAttrs = [NSAttributedStringKey.foregroundColor : kColorFromValue(0x929292)]
+        let selectedTextAttrs = [NSAttributedStringKey.foregroundColor : kColorFromValue(0x4c90f2)]
         childVc.tabBarItem.setTitleTextAttributes(textAttrs, for: UIControlState.normal)
         childVc.tabBarItem.setTitleTextAttributes(selectedTextAttrs, for: UIControlState.selected)
         
